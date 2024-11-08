@@ -1,0 +1,10 @@
+.item {
+    padding: 1em;
+    border: 1px solid black;
+}
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+}

@@ -1,0 +1,9 @@
+.content {
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+img {
+    max-width: 10em;
+    max-height: 10em;
+}
