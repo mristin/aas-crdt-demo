@@ -1,6 +1,6 @@
 import * as an from '@automerge/automerge/next'
+
 import * as assert from "./assert";
-import PropertyCounter from "./PropertyCounter";
 
 // NOTE (mristin):
 // This typing trick to represent plain JavaScript objects as dictionaries
@@ -69,11 +69,11 @@ export type SubmodelElementType = (
   | "SubmodelElementList"
   );
 
-export const VALUE_TYPE_DOUBLE: string = "DOUBLE";
-export const VALUE_TYPE_STRING: string = "STRING";
+export const DATA_TYPE_DEF_XSD_DOUBLE: string = "DOUBLE";
+export const DATA_TYPE_DEF_XSD_STRING: string = "STRING";
 export const VALUE_TYPES: Array<string> = [
-  VALUE_TYPE_DOUBLE,
-  VALUE_TYPE_STRING
+  DATA_TYPE_DEF_XSD_DOUBLE,
+  DATA_TYPE_DEF_XSD_STRING
 ];
 
 export interface SubmodelElement {
@@ -92,6 +92,7 @@ export interface PropertyText extends SubmodelElement {
 }
 
 export interface Blob extends SubmodelElement {
+  contentType: string;
   value: an.RawString;
 }
 

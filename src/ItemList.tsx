@@ -1,6 +1,8 @@
 import * as an from '@automerge/automerge/next'
+
 import * as model from './model'
 import * as assert from './assert'
+
 import "./ItemList.css"
 
 /**

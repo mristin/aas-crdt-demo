@@ -1,9 +1,11 @@
 import '@picocss/pico/css/pico.min.css'
-import './App.css'
 import {useDocument} from '@automerge/automerge-repo-react-hooks'
 import type {AutomergeUrl} from '@automerge/automerge-repo'
+
 import * as model from './model'
 import Environment from "./Environment";
+
+import './App.css'
 
 type Props = {
   docUrl: AutomergeUrl
