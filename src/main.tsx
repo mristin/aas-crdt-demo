@@ -1,13 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-
-import './index.css'
 import {isValidAutomergeUrl, Repo, RepoConfig} from '@automerge/automerge-repo'
 import {BrowserWebSocketClientAdapter} from '@automerge/automerge-repo-network-websocket'
 import {IndexedDBStorageAdapter} from "@automerge/automerge-repo-storage-indexeddb"
 import {RepoContext} from '@automerge/automerge-repo-react-hooks'
+
 import App from './App.tsx'
 import * as model from './model'
+
+import './index.css'
 
 const repoConfig: RepoConfig = {
   network: [new BrowserWebSocketClientAdapter(

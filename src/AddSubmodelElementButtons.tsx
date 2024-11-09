@@ -1,6 +1,7 @@
 import * as an from '@automerge/automerge/next'
-import * as model from './model'
 import * as am from "@automerge/automerge";
+
+import * as model from './model'
 
 function createInstance(
   submodelElementType: model.SubmodelElementType
@@ -12,7 +13,7 @@ function createInstance(
         submodelElementType: "PropertyCounter",
         idShort: "",
         value: new an.Counter(),
-        valueType: new an.RawString(model.VALUE_TYPE_DOUBLE)
+        valueType: new an.RawString(model.DATA_TYPE_DEF_XSD_DOUBLE)
       }
 
       return instance;
@@ -24,7 +25,7 @@ function createInstance(
         submodelElementType: "PropertyText",
         idShort: "",
         value: "",
-        valueType: new an.RawString(model.VALUE_TYPE_STRING)
+        valueType: new an.RawString(model.DATA_TYPE_DEF_XSD_STRING)
       }
 
       return instance;
@@ -33,6 +34,7 @@ function createInstance(
     case "Blob": {
       // noinspection UnnecessaryLocalVariableJS
       const instance: model.Blob = {
+        contentType: "",
         submodelElementType: "Blob",
         idShort: "",
         value: new an.RawString("")

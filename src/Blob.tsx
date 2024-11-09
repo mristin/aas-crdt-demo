@@ -23,6 +23,13 @@ function Blob(
         path={["objectMap", props.objectId, "idShort"]}
       />
 
+      <TextField
+        doc={props.doc}
+        changeDoc={props.changeDoc}
+        label="Content type"
+        path={["objectMap", props.objectId, "contentType"]}
+      />
+
       <LoadFileBase64
         doc={props.doc}
         changeDoc={props.changeDoc}

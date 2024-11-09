@@ -1,7 +1,7 @@
-import * as assert from './assert'
-import * as model from "./model";
 import * as an from '@automerge/automerge/next'
 
+import * as assert from './assert'
+import * as model from "./model";
 import "./LoadFileBase64.css"
 
 export default function LoadFileBase64(
