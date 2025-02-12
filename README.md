@@ -4,7 +4,7 @@ This is a demonstration of a collaborative editor for Asset Administration Shell
 
 ## Demo
 
-Go to https://mristin.github.io/aas-crdt-demo **TODO ONCE PAPER PUBLISHED**
+Go to https://mristin.github.io/aas-crdt-demo
 
 ## Development
 
